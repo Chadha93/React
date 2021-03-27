@@ -1,14 +1,15 @@
 import React from "react"; 
+import Tweet from "./tweet";
+
  
 function App() {   
 
-  const sayHello = () => {
-    console.log("Say Hello")
-  }
   return(
-     <div>                         {/*this is not actually HTML its the JSX*/} 
-      <h1>Hello World React</h1>
-      <button onClick={sayHello}></button>
+     <div className="app">
+       <h1>Hello React</h1>                      {/*this is not actually HTML its the JSX*/} 
+    <Tweet name="Gora" message ="This is a random tweet"/>
+    <Tweet name="Palli" message ="This is not a random tweet"/>
+    <Tweet name="Nanu" message ="This all is a random tweet"/>
     </div>
   );
 }
